@@ -1,2 +1,2 @@
 # portfolio---web-developer
-Portfolio to find informatio about me!
+Portfolio to find information about me!
