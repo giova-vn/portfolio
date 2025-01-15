@@ -1,0 +1,453 @@
+/* Giovanni Pena
+WEB 150, ASN6
+Businnes name: Summit Vista  */
+
+/* general */
+body {
+    max-width: 1900px;
+    background-color: #FAFAE4;
+    margin: 0;
+    font-family: manrope, Arial, Helvetica, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navigation bar */
+nav {
+    justify-content: space-between;
+    background-color: #DCC6AA;
+    max-height: 80px;
+}
+
+nav section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 50%;
+    max-height: 70px;
+}
+
+.logo {
+    justify-content: flex-start;
+    min-width: 20%;
+    font-family: "great vibes", cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.logo p {
+    margin: 1px;
+}
+
+.logo p:first-child {
+    font-size: 1.5em;
+}
+
+/* header */
+header div {
+    background-image: url(../images/main_picture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    padding-top: 90px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "great vibes", cursive;
+    letter-spacing: 5px;
+    font-size: 5em;
+    color: #5B3D16;
+
+    background-color: rgba(250, 250, 228, 0.30);
+    max-height: 80px;
+    min-width: 100%;
+    border-top: .05px solid #5B3D16;
+    border-bottom: .05px solid #5B3D16;
+    text-align: center;
+}
+
+header h2 {
+    margin-top: -10px;
+    font-size: 1.3em;
+}
+
+header p {
+    margin: 60px 15vw;
+    text-align: center;
+}
+
+.menu header div {
+    background-image: url(../images/menu_main_picture.jpg);
+}
+
+.contact header div {
+    background-image: url(../images/contact_main_picture_2.jpg);
+}
+
+.menu header h1 , .contact header h1 {
+    background-color: rgba(250, 250, 228, 0.500);
+}
+
+.contact header p {
+    margin: 60px 20vw;
+}
+
+.contact h2 {
+    padding-top: 5px;
+}
+
+/* main */
+main div {
+    justify-content: center;
+}
+
+main h2 {
+    text-align: center;
+    font-family: "great vibes", cursive;
+    font-size: 2.5em;
+    background-color: #DCC6AA;
+}
+
+.services {
+    display: flex;
+    max-width: 40%;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.home .services div {
+    flex-wrap: wrap;
+}
+
+.services h3 {
+    text-align: center;
+}
+
+.services p {
+    padding: 0px 18px;
+    text-align: justify;
+}
+
+.home h4 {
+    margin-bottom: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+main .row {
+    justify-content: space-evenly;
+}
+
+.block {
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block > h3 {
+    font-family: "great vibes", cursive;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.block .row section {
+    min-width: 30vw;
+    margin: 10px 10px;
+    border: solid 1px #5B3D16;
+}
+
+.block section div p {
+    margin-top: -10px;
+}
+
+.menu .block > h3 {
+    padding-left: 10%;
+    text-decoration: underline 1px;
+}
+
+.menu .block div {
+    min-width: 30vw;
+}
+
+.contact .block > h3 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.contact ul {
+    text-align: center;
+    list-style: none;
+    padding-right: 40px;
+}
+
+.contact .block > .block:nth-last-child(1) {
+    min-width: 50vw;
+}
+
+.contact section > h3 {
+    font-size: 1.3em;
+}
+
+.contact .block {
+    max-width: 100%;
+}
+
+.contact main > .block {
+    text-align: center;
+    align-items: center;
+}
+
+.contact h5 {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    border: solid 1px #5B3D16
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form .block {
+    min-height: 60vh;
+    justify-content: space-between;
+}
+
+form div:nth-child(8) {
+    min-height: 30%;
+    display: flex;
+    align-items: center;
+}
+
+form div:nth-child(8) div {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+form div:nth-child(8) div:first-of-type {
+    margin-top: -20px;
+    margin-bottom: -5px;
+}
+
+form [type="text"], form [type="email"] {
+    min-width: 25vw;
+    max-height: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+/* links */
+a {
+    color: #000000;
+}
+
+.current {
+    border-bottom: 1px solid #5B3D16;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+nav a:not(.logo a):hover {
+    color: #FAFAE4;
+    border-bottom: 1px solid #FAFAE4;
+}
+
+nav a:not(.logo a):active {
+    color: #FAFAE4;
+    background-color: #5B3D16;
+}
+
+.click {
+    background-color: #DCC6AA;
+    padding: 5px;
+    border: 0.5px solid #5B3D16;
+}
+
+.click:hover {
+    color: #5B3D16;
+    background-color: #FAFAE4;
+    border: 1px solid #5B3D16;
+}
+
+.click:active {
+    color: #FAFAE4;
+    background-color: #5B3D16;
+    border: 1px solid #DCC6AA;
+}
+
+.home h4 a {
+    color: #5B3D16;
+    border-bottom: 2px dashed;
+}
+
+.home h4 a:hover {
+    background-color: rgba(220, 198, 170, 0.8);
+    color: #5B3D16;
+    border-bottom: 2px solid #5B3D16;
+}
+
+.home h4 a:active {
+    background-color: rgba(91, 61, 22, 0.851);
+    color: #FAFAE4;
+    border-bottom: hidden;
+}
+
+.contact .click {
+    margin-top: 20px;
+}
+
+footer a:hover {
+    color: #FAFAE4;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DCC6AA;
+    padding: 5px 5vw;
+}
+
+footer div {
+    min-width: 20vw;
+    text-align: center;
+}
+
+footer div:first-child {
+    max-width: 15vw;
+}
+
+footer div:last-child {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+/* images */
+.logo img {
+    max-width: 60px;
+    padding: 5px 20px 0 10px;
+    border-radius: 30%;
+}
+
+.services img {
+    max-height: 70px;
+    border-radius: 50%;
+    border: 2px solid #5B3D16;
+}
+
+.menu .services img {
+    margin-right: 15px;
+}
+
+/* media */
+@media screen and (max-width: 700px) {
+    nav {
+        min-height: 120px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    nav section:last-child {
+        padding: 8px 0;
+        border-top: 1px solid #5B3D16;
+    }
+
+    header h1 {
+        font-size: 3.5em;
+        max-height: 60px;
+    }
+
+    header p {
+        margin: 60px 5vw;
+    }
+
+    .services, .block {
+        flex-direction: column;
+        min-width: 80%;
+    }
+
+    .menu .block > h3 {
+        border-top: solid thin #5B3D16;
+        padding-top: 5px;
+        padding-left: 0;
+        text-decoration: none;
+    }
+
+    .contact header p {
+        margin: 30px 10vh;
+    }
+
+    .contact form {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    .block .row:last-child {
+        flex-direction: column;
+    }
+
+    form > .block{
+        align-items: center;
+    }
+    
+    form div:nth-child(2), form div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+
+    .block .row section:last-of-type {
+       border: none;
+    }
+
+    form label {
+        margin-bottom: 0;
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+
+    footer div:first-child {
+        max-width: 25vw;
+    }
+}
+
