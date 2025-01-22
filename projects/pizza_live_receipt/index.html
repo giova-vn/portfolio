@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Giovanni Pena
-     WEB 200 - S01
-     Final Project - Da Gio's
-     
+<!-- 
      Purpose: 
-        Da Gio's is a pizzeria website where you can place your order in an interactive and intuitive process. 
+        Da Gio's is a pizzeria website where you can place your order in an intuitive and interactive process. 
         Delivery, pick up. a single pizza or many, Da Gio's can manage your order and give you your final receipt at the end!
      
      Dates:
@@ -18,8 +15,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WEB 200 - final project main page">
-    <title>WEB 200 - Final project; Da Gio's</title>
+    <meta name="description" content="Da Gio's main page">
+    <title>Da Gio's - Order your pizza</title>
 
     <!-- fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Yellowtail&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="final_project_style.css">
+    <link rel="stylesheet" href="styless.css">
 </head>
 
 
@@ -44,11 +41,11 @@
                 <h2>Customer</h2>
                 <div>
                     <label for="fName">First Name</label>
-                    <input type="text" name="fName" id="fName" placeholder="First Name" onblur="checkSetNameButton()"
+                    <input type="text" name="fName" id="fName" placeholder="First Name" oninput="checkSetNameButton()"
                         required>
 
                     <label for="lName">Last Name</label>
-                    <input type="text" name="lName" id="lName" placeholder="Last Name" onblur="checkSetNameButton()"
+                    <input type="text" name="lName" id="lName" placeholder="Last Name" oninput="checkSetNameButton()"
                         required>
                 </div>
                 <div>
@@ -58,7 +55,7 @@
 
                 <div>
                     <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="Phone number" onblur="checkSetNameButton()"
+                    <input type="text" name="phone" id="phone" placeholder="Phone number" oninput="checkSetNameButton()"
                         required>
                 </div>
                 <div>
@@ -74,12 +71,12 @@
             <form id="customerChoice">
                 <div>
                     <input type="radio" id="deliveryChoice" name="orderChoice" value="delivery"
-                        onchange="userDeliveryChoice()">
+                        oninput="userDeliveryChoice()">
                     <label for="deliveryChoice">Delivery</label>
                 </div>
                 <div>
                     <input type="radio" id="pickUpChoice" name="orderChoice" value="pickUp"
-                        onchange="userDeliveryChoice()">
+                        oninput="userDeliveryChoice()">
                     <label for="pickUpChoice">Pick Up</label>
                 </div>
             </form>
@@ -87,20 +84,19 @@
             <form id="deliveryInformation">
                 <label for="deliveryAddress">Address</label>
                 <input type="text" name="deliveryAddress" id="deliveryAddress" placeholder="Street"
-                    onblur="checkDeliveryButton()" required>
+                    oninput="checkDeliveryButton()" required>
                     <p id="addressErrorMessage"></p>
                 <input type="text" name="deliveryAddressTwo" id="deliveryAddressTwo"
                     placeholder="Apt, Unit, Building, etc.">
 
                 <label for="deliveryCity">City</label>
                 <input type="text" name="deliveryCity" id="deliveryCity" placeholder="City"
-                    onblur="checkDeliveryButton()" required>
+                    oninput="checkDeliveryButton()" required>
                 <p id="cityErrorMessage"></p>
 
                 <label for="deliveryState">State</label>
                 <input type="text" name="deliveryState" id="deliveryState" placeholder="State" list="us_states"
-                    onblur="checkDeliveryButton()" required>
-                <!-- I am using the same datalist from the past session assignment -->
+                    oninput="checkDeliveryButton()" required>
                 <datalist id="us_states">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -159,7 +155,7 @@
 
                 <label for="deliveryZip">Zip</label>
                 <input type="text" name="deliveryZip" id="deliveryZip" placeholder="Postal code" maxlength="5"
-                    onblur="checkDeliveryButton()" required>
+                    oninput="checkDeliveryButton()" required>
                 <p id="zipErrorMessage"></p>
 
                 <input type="button" name="setAddress" id="setAddress" value="Set" onclick="getDeliveryInformation()"
@@ -257,10 +253,10 @@
         </div>
         <div>
             <p>Contact</p>
-            <p><a href="mailto:pg97315@mail.harpercollege.edu">pg97315@mail.harpercollege.edu</a></p>
+            <p><a href="mailto:github.com/giova-vn">giova-vn</a></p>
         </div>
     </footer>
 
-    <script src="final_project.js"></script>
+    <script src="da_gios.js"></script>
 </body>
 </html>
