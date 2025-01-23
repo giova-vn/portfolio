@@ -1,2 +1,2 @@
 # portfolio---web-developer
-Portfolio to find information about me!
+I am a web development student, highly motivated and passionate about learning more everyday. In my projects I show my dedication in bringing out the best possible ideas with my skills. I am constantly looking for opportunities and challenges to improve myself as a person. I can handle projects with time management and I can collaborate in a team and share ideas. I am confident that my skills and my motivation to learn are valuable to any organization or team that wants to achieve its goals.
