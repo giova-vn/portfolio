@@ -135,3 +135,25 @@ section div {
     align-items: center;
     flex-grow: 1;
 }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+    .projects .row {
+        flex-direction: column;
+    }
+
+    .projects>div {
+        padding: 0px;
+        height: 95vh;
+    }
+
+    .contact-me .row {
+        flex-direction: column;
+    }
+}
