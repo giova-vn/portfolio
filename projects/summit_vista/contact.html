@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 
-<!-- Giovanni Pena
-WEB 150, ASN6
-Businnes name: Summit Vista -->
+<!--
+Giovanni Pena
+github: https://github.com/giova-vn
+
+Interactive web site of a company that rents meeting rooms. 100% responsive made with only HTML and CSS.
+Contact page
+-->
 
 <html lang="en">
 
@@ -50,19 +54,20 @@ Businnes name: Summit Vista -->
         <h2> --- Contact with Us --- </h2>
         <div class="block">
 
-            <form action="submit.php" method="post">
+            <form action="contact.html" method="post">
                 <div class="block">
                     <h3>We will contact you as soon as possible!</h3>
                     <div>
                         <label for="client_number">Your phone number: </label>
-                        <input type="text" name="client_number" id="client_number" placeholder="+1 (123) 123-1234">    
+                        <input type="text" name="client_number" id="client_number" placeholder="+1 (123) 123-1234">
                     </div>
 
                     <div>
                         <label for="client_email">Your e-mail: </label>
-                        <input type="email" name="client_email" id="client_email" placeholder="client@email.com" required>
+                        <input type="email" name="client_email" id="client_email" placeholder="client@email.com"
+                            required>
                     </div>
-                    
+
                     <label for="client_name">Your name: </label>
                     <div class="row">
                         <select name="client_prefix" id="client_prefix">
@@ -82,7 +87,7 @@ Businnes name: Summit Vista -->
                         <option value="3">Evening: 4:00 pm - 8:00 pm</option>
                     </select>
 
-                    <div class="block"> 
+                    <div class="block">
                         <p>Call or e-mail?</p>
                         <div class="row">
                             <input type="radio" name="contact_method" id="method_call" required>
@@ -98,7 +103,7 @@ Businnes name: Summit Vista -->
                     <label for="client_idea">Tell us a bit about your idea!</label>
                     <textarea name="client_idea" id="client_idea" cols="10" rows="5"
                         placeholder="Something in mind? Question? Appointment? Why we are the best option?"></textarea>
-                
+
                     <div>
                         <input type="checkbox" name="announcement" value="yes" id="announcement">
                         <label for="announcement">Announcement for next offers?</label>
@@ -106,14 +111,14 @@ Businnes name: Summit Vista -->
 
                 </div>
 
-                <button class="click" type="submit">Submit</button>
+                <button class="click" type="submit" onclick="clicked()">Submit</button>
             </form>
+
 
             <div class="block">
                 <h3>You can take the first step!</h3>
 
                 <section class="block">
-
                     <div class="row">
                         <div>
                             <h3>Number</h3>
@@ -134,7 +139,6 @@ Businnes name: Summit Vista -->
                             <li>Complete your idea</li>
                         </ul>
                     </div>
-
                 </section>
 
             </div>
@@ -152,7 +156,7 @@ Businnes name: Summit Vista -->
                     </div>
                 </section>
 
-                <section> 
+                <section>
                     <h3>Visit Us!</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6316.036898250708!2d-88.0706153965193!3d42.080579352293505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fa5ea8417c0e7%3A0x21db8e922adaf041!2sHarper%20College%20Library!5e0!3m2!1ses-419!2sus!4v1714179853821!5m2!1ses-419!2sus"
@@ -191,6 +195,11 @@ Businnes name: Summit Vista -->
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
 
+    <script>
+        function clicked() {
+            window.alert("Form submitted.")
+        }
+    </script>
 </body>
 
 </html>

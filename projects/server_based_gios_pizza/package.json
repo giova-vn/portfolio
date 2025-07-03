@@ -1,0 +1,33 @@
+{
+  "name": "web250-giovanni-pena",
+  "version": "1.0.0",
+  "description": "main page source",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "devStart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giova-vn/WEB250-Giovanni-Pena.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giova-vn/WEB250-Giovanni-Pena/issues"
+  },
+  "homepage": "https://github.com/giova-vn/WEB250-Giovanni-Pena#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "express-fileupload": "^1.5.1",
+    "express-session": "^1.18.1",
+    "handlebars": "^4.7.8",
+    "node-fetch": "^3.3.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {}
+}

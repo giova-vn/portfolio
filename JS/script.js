@@ -1,15 +1,17 @@
 $(document).ready(function() {
+    $('nav h1').animate({
+        top: '0',
+        opacity: '1'
+    }, 800); 
 
-    //intro
-    $(".intro_from_bottom").css({
-        position: "relative",
-        bottom: "-100px",
-        opacity: 0
-    });
-    
-    $(".intro_from_bottom").animate({
-        bottom: "0",
-        opacity: 1
-    }, 1000);
+    $('nav h3').delay(200).animate({
+        top: '0',
+        opacity: '1'
+    }, 800); 
 
-}); //end redy
+    $('nav .nav-button').delay(400).animate({
+        top: '0',
+        opacity: '1'
+    }, 800);
+
+}); //end ready

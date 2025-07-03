@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Server-based website pizza order application  -->
+
+<!-- 
+    Program that manages a pizzeria web site. The site uses different web pages and manages a related database. 
+    Customers can create new accounts to place new pizza orders. Customers with an account can log in to see the 
+    orders they have already placed. Store encrypted passwords and use REST API to calculate rates taxes. Employees 
+    can log in, view and change the status of orders. Managers can additionally add new employees, change their status 
+    and view tax summary by zip code.
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WEB250 final project login/signup page">
+    <title>Da Gio's</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Yellowtail&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/finalProject.css">
+</head>
+
+
+<body>
+    <nav>
+        <a href="/"><img src="/pictures/da_gio_s_logo.jpg" alt="da_gio_s_logo" class="logo"></a>
+        <h1>Da Gio's</h1>
+    </nav>
+
+    <main class="login">
+        <!-- customer -->
+        <div class="column">
+            <form action="/final_app/order" method="POST">
+                <h3>Customer</h3>
+                <div class="column">
+                    <input type="text" name="mainCustomerUsername" id="mainCustomerUsername" placeholder="Username"
+                        required>
+                    <input type="password" name="mainCustomerPassword" id="mainCustomerPassword" placeholder="Password"
+                        required>
+                    <input type="submit" name="mainCustomerSubmit" id="mainCustomerSubmit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+
+        <!-- employee -->
+        <div class="column">
+            <form action="/final_app/employee" method="POST">
+                <h3>Employee</h3>
+                <div class="column">
+                    <input type="text" name="mainEmployeeUsername" id="mainEmployeeUsername" placeholder="Username"
+                        required>
+                    <input type="password" name="mainEmployeePassword" id="mainEmployeePassword" placeholder="Password"
+                        required>
+                    <input type="submit" name="mainEmployeeSubmit" id="mainEmployeeSubmit" value="Submit">
+                </div>
+            </form>
+            <p class="error">{{loginError}}</p>
+        </div>
+
+        <section>
+            <div class="login_info">
+                <p><u>User:</u> customer</p>
+                <p><u>Password:</u> password123</p>
+            </div>
+            <div class="login_info">
+                <p><u>To add a new user:</u></p>
+                <p>Log in as a non-registered customer</p>
+            </div>
+            <div class="login_info">
+                <p><u>User:</u> manager</p>
+                <p><u>Password:</u> 123123</p>
+            </div>
+            <div class="login_info">
+                <p><u>User:</u> employee01</p>
+                <p><u>Password:</u> 129129</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://maps.app.goo.gl/LCbaiY93x9VS5LeUA">Schaumburg, IL, 60173</a>
+        </div>
+        <div>
+            <p>Contact</p>
+            <p><a href="mailto:giovannipe0420@gmail.com">giovannipe0420@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Da Gio's - manager/employee website">
+    <title>Da Gio's - Employee</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Yellowtail&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/finalProject.css">
+</head>
+
+
+<body>
+    <nav>
+        <a href="/"><img src="/pictures/da_gio_s_logo.jpg" alt="da_gio_s_logo" class="logo"></a>
+        <h1>Da Gio's</h1>
+    </nav>
+
+    <main class="column">
+        <h2>Welcome, {{employee_name}}</h2>
+
+        <section>    
+            <div class="taxEmployee">
+                {{{tax_summary}}}
+            </div>
+    
+            <div class="manager">
+                {{{employees}}}
+            </div>
+
+            <div class="addNewEmployeeForm">
+                {{{new_employee}}}
+            </div>
+
+            <div class="employeeOrders">
+                {{{orders}}}
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://maps.app.goo.gl/LCbaiY93x9VS5LeUA">Schaumburg, IL, 60173</a>
+        </div>
+        <div>
+            <p>Contact</p>
+            <p><a href="mailto:giovannipe0420@gmail.com">giovannipe0420@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+
+
+</html>

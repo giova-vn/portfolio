@@ -1,4 +1,8 @@
 /* General styles */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     max-width: 1900px;
@@ -40,10 +44,11 @@ h1, nav h3 {
 
 .white-box {
     background: white;
-    height: 120vh;
-    width: 80vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    min-height: 120vh;
+    max-width: 80vw;
+    padding: 40px;
+    border-radius: 10px;
+    margin: -40px auto 40px auto;
 }
 
 .contact-me {
@@ -66,12 +71,19 @@ a {
 }
 
 h1 {
-    font-size: 4em;
-    padding: 15px;
+    font-size: 3.3em;
+    padding: 30px;
+    text-align: center;
 }
 
 nav h3 {
     padding: 20px;
+}
+
+nav h1, nav h3, .nav-button {
+    position: relative;
+    top: 50px;
+    opacity: 0;
 }
 
 nav h3:first-of-type {
@@ -79,7 +91,7 @@ nav h3:first-of-type {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 50px;
 }
 
@@ -98,13 +110,27 @@ h2 {
     justify-content: center;
 }
 
-.projects h3 {
-    padding: 10px;
-}
-
 .txt {
     display: flex;
     flex-direction: column;
+}
+
+.contact-me > div > a {
+    text-align: center;
+}
+
+.nav-button {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: rgb(68, 160, 54);
+    transform: translateY(-2px); 
 }
 
 @media screen and (max-width: 768px) {
@@ -115,6 +141,10 @@ h2 {
     h2 {
         font-size: 1.5em;
         padding: 20px;
+    }
+
+    p, h3 {
+        text-align: center;
     }
 
     .projects > div {
@@ -144,4 +174,11 @@ h2 {
         flex-direction: column;
     }
 
+    .white-box {
+        height: auto;
+    }
+    
+    #projects {
+        padding: 0;
+    }
 }
