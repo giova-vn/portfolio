@@ -1,7 +1,8 @@
 /* All */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -60,8 +61,12 @@ footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 15vw;
+    width: 15vw;
     margin: 10px;
+}
+
+footer p {
+    font-weight: bold;
 }
 
 /* main */
@@ -385,4 +390,99 @@ td {
     width: 110px;
     height: 30px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav a, h1 {
+        margin: 20px;
+    }
+
+    .login, footer {
+        flex-direction: column;
+    }
+
+    footer div{
+        width: 100%;
+    }
+
+    .login_info {
+        margin: 5px;
+    }
+
+    .login_info:nth-child(3) {
+        margin-top: 30px;
+    }
+
+    .order-page {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .order {
+        width: 80vw;
+    }
+
+    .order form {
+        margin: 0;
+    }
+
+    .customerInformation div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customerInformation label {
+        width: 50%;
+        padding: 7px 0 3px 0;
+    }
+
+    .customerInformation div:last-child {
+        flex-direction: row;
+    }
+
+    #deliveryInformation {
+        align-items: center;
+    }
+
+    #deliveryInformation label {
+        width: 50%;
+        margin-bottom: 3px;
+    }
+
+    #deliveryInformation input {
+        margin: 3px;
+    }
+
+    .pizzaSizeBox {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 300px;
+        letter-spacing: .5px;
+    }
+
+    .pizzaSizeBox div {
+        margin: 5px;
+    }
+
+    .receiptBox {
+        margin: 15px;
+        width: 80vw;
+        min-height: 30vh;
+    }
+
+    /* receipt  */
+    .receiptPage {
+        width: 80vw;
+        height: 95vh;
+    }
+
+    #displayReceiptHeader {
+        width: 300px;
+    }
+
+    #insertHeader > div {
+        width: 230px;
+    } 
 }

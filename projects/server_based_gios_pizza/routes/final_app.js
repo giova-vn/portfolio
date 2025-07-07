@@ -72,14 +72,14 @@ router.post("/order", async(req, res) => {
                 }
                 else {       //wrong password
                     req.session.loginError = "Username or password invalid.";
-                    return res.redirect("/");
+                    return res.redirect("/final_app");
                 }
             }
         });
     }
     catch(error) {
         console.log("error in customer login. " + error)
-        return res.redirect("/");
+        return res.redirect("/final_app");
     }
 });
 
