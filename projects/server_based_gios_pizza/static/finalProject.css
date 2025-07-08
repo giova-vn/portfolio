@@ -1,6 +1,6 @@
 /* All */
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -393,6 +393,10 @@ td {
 }
 
 @media screen and (max-width: 768px) {
+    * {
+        margin: 0 auto;
+    }
+
     nav a, h1 {
         margin: 20px;
     }

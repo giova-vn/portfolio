@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Giovanni Pena
+github: https://github.com/giova-vn
+
+Business website promoting the service of a photographer. 100% responsive and coded with HMTL, CSS, JavaScript, jQuery and Vue.js.
+Home page
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angel's Photography - home/welcome page">
+    <title>Angel's Photography</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="home">
+    <nav class="row">
+        <a href="about_me.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="studio.html">Studio</a>
+
+        <a href="index.html" id="angel_title">
+            <h1>Angel Fabricio</h1>
+        </a>
+
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Log in</a>
+    </nav>
+
+    <header>
+        <div id="imageCarousel" class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="images/portfolio/picture_7.jpg"
+                    alt="Fountain in the garden at the chicago botanical garden">
+                <div class="carousel-caption"><span>Fountain in the garden at the chicago botanical garden</span></div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/portfolio/picture_38.jpg" alt="Paroaria Coronata picture">
+                <div class="carousel-caption"><span>Paroaria Coronata</span></div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/portfolio/picture_21.jpg" alt="Agapornis Fischeri picture">
+                <div class="carousel-caption"><span>Agapornis Fischeri</span></div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/portfolio/picture_23.jpg" alt="Bike next to the street in Santiago de Chile">
+                <div class="carousel-caption"><span>Street in Santiago de Chile</span></div>
+            </div>
+            <div class="carousel-slide">
+                <img src="images/portfolio/picture_4.jpg" alt="Cat picture outside of the city">
+                <div class="carousel-caption"><span>Outside of the city</span></div>
+            </div>
+
+            <div class="carousel-button">
+                <a class="carousel-prev"><i class="fas fa-chevron-left"></i></a>
+                <a class="carousel-next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+
+        </div>
+
+        <div>
+            <img src="images/angel_pic_1.jpg" alt="angel_personal_pic_side" class="angel_main_picture">
+        </div>
+    </header>
+
+    <main>
+        <section class="column summary">
+            <h2>Hi! My name is Angel</h2>
+            <div class="row">
+                <p class="summary_box">Playing with illumination and shadows, I love to capture the beauty of situations
+                    and environments.
+                    There can be as much detail in a photo as in a movie. Capturing nature and structures can have a
+                    very deep message and story. Capturing emotions and essences in special events is the opportunity to
+                    freeze a moment in time in order to relive emotions.</p>
+                <img src="images/angel_pic_2.jpg" alt="angel_personal_pic_front" id="angel_summary_picture">
+                <p class="summary_box">My idea is to be able to capture images that resonate with you. Images that
+                    transport you in time and
+                    memory. The vastness of a landscape, the elegance of a building, the meaning of a smile or the
+                    reason for a meeting. Photography has an infinite number of possibilities. Whatever the situation, I
+                    am committed to help you and make your moments timeless.</p>
+            </div>
+        </section>
+
+        <section class="column ideas">
+            <h2>How can I help</h2>
+            <div class="row">
+                <div class="column polaroid">
+                    <img src="images/idea_nature.jpg" alt="natural_ducks_pic">
+                    <h3>Nature</h3>
+                </div>
+
+                <div class="column polaroid">
+                    <img src="images/idea_proposal.jpg" alt="snow_proposal_pic">
+                    <h3>Proposal</h3>
+                </div>
+
+                <div class="column polaroid">
+                    <img src="images/idea_party.jpg" alt="party_friends_pic">
+                    <h3>Party</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="column pictures_home">
+            <a href="https://www.instagram.com/">
+                <h2>angel_fp</h2>
+            </a>
+
+            <div class="horizontal-scroll-wrapper">
+                <button class="scroll-btn prev-btn" aria-label="Previous Images"><i
+                        class="fas fa-chevron-left"></i></button>
+                <div class="scroll-container">
+                    <div class="scroll-content">
+                        <img src="images/home_pic_6.jpg" alt="cat stares">
+                        <img src="images/home_pic_1.jpg" alt="center of the mall">
+                        <img src="images/home_pic_2.jpg" alt="boat in port">
+                        <img src="images/home_pic_3.jpg" alt="bird pose">
+                        <img src="images/home_pic_7.jpg" alt="walking under the opera house">
+                        <img src="images/home_pic_4.jpg" alt="milwaukee public market">
+                        <img src="images/home_pic_5.jpg" alt="people walking along a path">
+                        <img src="images/portfolio/picture_3.jpg" alt="jay Pritzker Pavilion">
+                    </div>
+                </div>
+                <button class="scroll-btn next-btn" aria-label="Next Images"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="row">
+
+        <div class="row">
+            <div class="column">
+                <a href="about_me.html">About me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="studio.html">Studio</a>
+            </div>
+            <div class="column">
+                <a href="plans.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/giova-vn">Github</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:giovannipe0420@gmail.com">Gmail</a>
+            </div>
+        </div>
+
+        <a id="scrollTop" title="Go to top">
+            <button class="fas fa-arrow-up"></button>
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/my_jQuery.js"></script>
+
+</body>
+
+
+</html>

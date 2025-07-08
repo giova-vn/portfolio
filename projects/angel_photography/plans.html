@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Giovanni Pena
+github: https://github.com/giova-vn
+
+Business website promoting the service of a photographer. 100% responsive and coded with HMTL, CSS, JavaScript, jQuery and Vue.js.
+Plans page
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angel's photography - plans table of services page">
+    <title>Angel - My Plans</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="plans">
+    <nav class="row">
+        <a href="about_me.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="studio.html">Studio</a>
+
+        <a href="index.html" id="angel_title">
+            <h1>Angel Fabricio</h1>
+        </a>
+
+        <a href="plans.html" class="currentTab">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Log in</a>
+    </nav>
+
+    <header class="column">
+        <h2>Plans</h2>
+        <div class="row">
+            <img src="images/plans_main_pic.jpg" alt="Prices main picture" class="angel_main_picture">
+            <div class="column summary_box">
+                <p>My way of thinking is: </p>
+                <ul>
+                    <li>Simple its better.</li>
+                    <li>Complete and simple packages</li>
+                    <li>All of them can be personalized</li>
+                    <li>Honesty with your and my time</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="column">
+        <table id="plansTable">
+            <h2>Prices</h2> 
+            <tr class="table_head">
+                <th>Service / Plan</th>
+                <th>Starting Price</th>
+                <th>Details</th> 
+            </tr>
+
+        
+            <tr class="plan_toggle">
+                <td class="plan_title"><h3>Weeding</h3></td>
+                <td class="plan_price"><h4>$3000</h4></td>
+                <td class="plan-toggle-cell"><p class="this_icon">+</p></td>
+            </tr>
+            
+            <tr class="plan_details" style="display: none;"> <td colspan="3" class=".plan_cell">
+                    <ul>
+                        <li>All day weeding cover</li>
+                        <li>Exclusive gallery for downloading and sharing</li>
+                        <li>Couple portrait</li>
+                        <li>Weeding party and family portraits</li>
+                        <li>Preparations and post party pictures</li>
+                        <li>Travel within 80 miles from Chicago</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr class="plan_toggle">
+                <td class="plan_title"><h3>Proposal/adventure</h3></td>
+                <td class="plan_price"><h4>$2000</h4></td>
+                <td class="plan-toggle-cell"><p class="this_icon">+</p></td>
+            </tr>
+            <tr class="plan_details" style="display: none;"> <td colspan="3" class=".plan_cell">
+                    <ul>
+                        <li>All travel cover (5 hours max)</li>
+                        <li>Exclusive gallery for downloading and sharing</li>
+                        <li>Couple portrait</li>
+                        <li>Proposal moment portrait</li>
+                        <li>Photos of all the scenery during the trip.</li>
+                        <li>Travel within 60 miles from Chicago</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr class="plan_toggle">
+                <td class="plan_title"><h3>Standard session</h3></td>
+                <td class="plan_price"><h4>$400</h4></td>
+                <td class="plan-toggle-cell"><p class="this_icon">+</p></td>
+            </tr>
+
+            <tr class="plan_details"> 
+                <td colspan="3">
+                    <ul>
+                        <li>90 minutes personal photography session</li>
+                        <li>40+ final pictures</li>
+                        <li>Exclusive gallery for downloading and sharing</li>
+                        <li>Travel within 30 miles from Chicago</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr class="plan_toggle">
+                <td class="plan_title"><h3>Standard studio session</h3></td>
+                <td class="plan_price"><h4>$300</h4></td>
+                <td class="plan-toggle-cell"><p class="this_icon">+</p></td>
+            </tr>
+
+            <tr class="plan_details"> 
+                <td colspan="3">
+                    <ul>
+                        <li>60 minutes personal photography session</li>
+                        <li>30+ final pictures</li>
+                        <li>Exclusive gallery for downloading and sharing</li>
+                        <li>Location at my <a href="studio.html">studio</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer class="row">
+
+        <div class="row">
+            <div class="column">
+                <a href="about_me.html">About me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="studio.html">Studio</a>
+            </div>
+            <div class="column">
+                <a href="plans.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/giova-vn">Github</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:giovannipe0420@gmail.com">Gmail</a>
+            </div>
+        </div>
+
+        <a id="scrollTop" title="Go to top"> 
+            <button class="fas fa-arrow-up"></button>
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="JS/my_jQuery.js"></script> 
+</body>
+
+</html>

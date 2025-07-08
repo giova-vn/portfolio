@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Giovanni Pena
+github: https://github.com/giova-vn
+
+Business website promoting the service of a photographer. 100% responsive and coded with HMTL, CSS, JavaScript, jQuery and Vue.js.
+Studio page
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angel's photography - studio location and reservation page">
+    <title>Angel - My Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="studio">
+    <nav class="row">
+        <a href="about_me.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="studio.html" class="currentTab">Studio</a>
+        <a href="index.html" id="angel_title">
+            <h1>Angel Fabricio</h1>
+        </a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Log in</a>
+    </nav>
+
+    <header class="column">
+        <h2>Do you want a personal session?</h2>
+        <div class="row">
+            <img src="images/studio_angel.jpg" alt="Angel personal studio" class="angel_main_picture">
+            <p class="summary_box">
+                For private sessions, whether they are family photos, newborns or birthdays, they can be done in my studio.
+                It is a studio I rent in Palatine, a suburb of Chicago, Illinois. Since it's a rental I must rent it in
+                advance, so fill out this form to make a reservation for us! You can also <a href="contact.html">contact me</a> 
+                directly for more questions.
+            </p>
+        </div>
+    </header>
+
+    <main class="row">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4310.652814801411!2d-88.07239106398036!3d42.079225485137634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fa5ea9833a843%3A0xeb56837f813674f!2sHarper%20College!5e0!3m2!1sen!2sus!4v1743482321489!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <form action="#" class="column" id="studioForm">
+            <div class="column">
+                <label for="clientName">Full name</label>
+                <input type="text" name="clientName" id="clientName" placeholder="Name">
+            </div>
+            <div class="column">
+                <label for="clientEmail">Email</label>
+                <input type="text" name="clientEmail" id="clientEmail" placeholder="@mail.com">
+            </div>
+            <div class="column">
+                <label for="clientNumber">Phone number</label>
+                <div class="center">
+                    <select name="clientNumberCode" id="clientNumberCode">
+                        <option value="1">+1</option>
+                        <option value="57">+57</option>
+                        <option value="58">+58</option>
+                    </select>
+
+                    <input type="text" name="clientNumber" id="clientNumber" placeholder="(123) 123 - 1234">
+                </div>
+                <div class="column radio_buttons">
+                    <p>Preferred method</p>
+                    <div>
+                        <input type="radio" name="preferredMethod" id="preferredEmail">
+                        <label for="preferredEmail">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="preferredMethod" id="preferredPhone">
+                        <label for="preferredPhone">Phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="preferredMethod" id="preferredBoth">
+                        <label for="preferredBoth">Both</label>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="clientComment" id="clientComment" placeholder="Comments? Notes? Ideas?"
+                         cols="40" rows="8"></textarea>
+                </div>
+            </div>
+            <button>Submit</button>
+        </form>
+    </main>
+
+
+    <footer class="row">
+        <div class="row">
+            <div class="column">
+                <a href="about_me.html">About me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="studio.html">Studio</a>
+            </div>
+            <div class="column">
+                <a href="plans.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/giova-vn">Github</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="giovannipe0420@gmail.com">Gmail</a>
+            </div>
+        </div>
+
+        <a id="scrollTop" title="Go to top">
+            <button class="fas fa-arrow-up"></button>
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- jQuery external validation file -->
+    <script src="JS/form_jQuery.js"></script>
+    <!-- jQuery for the scroll top button -->
+    <script src="JS/my_jQuery.js"></script>
+</body>
+
+</html>

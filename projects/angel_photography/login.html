@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Giovanni Pena
+github: https://github.com/giova-vn
+
+Business website promoting the service of a photographer. 100% responsive and coded with HMTL, CSS, JavaScript, jQuery and Vue.js.
+Login page
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angel's photography - log in form page">
+    <title>Angel - Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login">
+    <nav class="row">
+        <a href="about_me.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="studio.html">Studio</a>
+
+        <a href="index.html" id="angel_title">
+            <h1>Angel Fabricio</h1>
+        </a>
+        
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="currentTab">Log in</a>
+    </nav>
+
+    <header>
+        <!-- empty space on purpose -->
+    </header>
+
+    <main class="column">
+        <form class="column" id="loginForm" action="success.html">
+            <label for="clientUsername">Username</label>
+            <input type="text" name="clientUsername" id="clientUsername">
+
+            <label for="clientPassword">Password</label>
+            <input type="password" name="clientPassword" id="clientPassword"> 
+
+            <button type="submit">Log in</button> 
+        </form>
+    </main>
+
+    <footer class="row">
+
+        <div class="row">
+            <div class="column">
+                <a href="about_me.html">About me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="studio.html">Studio</a>
+            </div>
+            <div class="column">
+                <a href="plans.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/giova-vn">Github</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:giovannipe0420@gmail.com">Gmail</a>
+            </div>
+        </div>
+
+        <a id="scrollTop" title="Go to top">
+            <button class="fas fa-arrow-up"></button>
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- jQuery external validation file -->
+    <script src="JS/form_jQuery.js"></script>
+</body>
+</html>

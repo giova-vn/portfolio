@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Giovanni Pena
+github: https://github.com/giova-vn
+
+Business website promoting the service of a photographer. 100% responsive and coded with HMTL, CSS, JavaScript, jQuery and Vue.js.
+contact page
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angel's photography - contact form page">
+    <title>Angel - Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body class="contact">
+    <nav class="row">
+        <a href="about_me.html">About me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="studio.html">Studio</a>
+
+        <a href="index.html" id="angel_title">
+            <h1>Angel Fabricio</h1>
+        </a>
+
+        <a href="plans.html">Plans</a>
+        <a href="contact.html" class="currentTab">Contact</a>
+        <a href="login.html">Log in</a>
+    </nav>
+
+    <header class="column">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <img src="images/contact_me_main.jpg" alt="contact me main picture">
+            <div class="column">
+                <h3>Let's talk about your plans!</h3>
+                <p class="summary_box">
+                    Do you want to contact me? Do you have any questions? Want to know more? Have an even better idea?
+                    You are free to call or text me on my phone, or write me an email at my email address.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="column">
+                <p>Call or text me</p>
+                <p>+1 (123) 456 - 123789</p>
+            </div>
+            <div class="column">
+                <p>Email me</p>
+                <p><a href="mailto:giovanni0420@gmail.com">giovanni0420@gmail.com</a></p>
+            </div>
+        </div>
+
+        <section>
+            <p>
+                If you don't want to use this method or I don't reply right away, you can fill out this form, and I will
+                look for you as soon as possible!
+            </p>
+
+            <form class="column" id="contactForm" action="#">
+                <div class="row">
+                    <div class="column">
+                        <label for="customerFirstName">First Name</label>
+                        <input type="text" name="customerFirstName" id="customerFirstName">
+                    </div>
+                    <div class="column">
+                        <label for="customerLastName">Last Name</label>
+                        <input type="text" name="customerLastName" id="customerLastName">
+                    </div>
+                </div>
+
+                <label for="customerEmail">Email</label>
+                <input type="email" name="customerEmail" id="customerEmail">
+
+                <label for="customerPhone">Phone number</label>
+                <div class="row phone_group">
+                    <select name="clientPhoneCode" id="clientPhoneCode">
+                        <option value="1">+1</option>
+                        <option value="57">+57</option>
+                        <option value="58">+58</option>
+                    </select>
+                    <input type="text" name="customerPhone" id="customerPhone">
+                </div>
+
+                <label for="customerTypeService">Type of photography needed</label>
+                <input type="text" name="customerTypeService" id="customerTypeService">
+
+                <label for="customerRole">Your role</label>
+                <select name="customerRole" id="customerRole">
+                    <option value="">- Select -</option>
+                    <option value="client">client</option>
+                    <option value="organizer">Organizer</option>
+                    <option value="organization">Organization</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="customerDesiredDate">Select the event date</label>
+                <input type="date" name="customerDesiredDate" id="customerDesiredDate">
+
+                <div class="column radio_container">
+                    <p class="preferred radio_container">Preferred method</p>
+                    <div>
+                        <input type="radio" name="contactPreferredMethod" id="contactPreferredEmail">
+                        <label for="contactPreferredEmail">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contactPreferredMethod" id="contactPreferredPhone">
+                        <label for="contactPreferredPhone">Phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="contactPreferredMethod" id="contactPreferredBoth">
+                        <label for="contactPreferredBoth">Both</label>
+                    </div>
+                </div>
+
+                <label for="client_time">What's the best time to contact you?</label>
+                <select name="clientTime" id="clientTime">
+                    <option value="">- Select -</option>
+                    <option value="1">Morning (before 12:00pm CDT)</option>
+                    <option value="2">Afternoon (after 12:00pm CDT) </option>
+                    <option value="3">Evening: (After 5:00pm CDT)</option>
+                </select>
+
+                <label for="custommerMessage">Message</label>
+                <textarea name="custommerMessage" id="custommerMessage" cols="10" rows="8"></textarea>
+                <button type="submit">Send request</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="row">
+
+        <div class="row">
+            <div class="column">
+                <a href="about_me.html">About me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="studio.html">Studio</a>
+            </div>
+            <div class="column">
+                <a href="plans.html">Plans</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Log in</a>
+            </div>
+        </div>
+
+        <div class="column">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/giova-vn">Github</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:giovannipe0420@gmail.com">Gmail</a>
+            </div>
+        </div>
+
+        <a id="scrollTop" title="Go to top">
+            <button class="fas fa-arrow-up"></button>
+        </a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+        integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery validation plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <!-- jQuery external validation file -->
+    <script src="JS/form_jQuery.js"></script>
+    <script src="JS/my_jQuery.js"></script>
+
+</body>
+
+
+</html>
