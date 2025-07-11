@@ -51,8 +51,8 @@ h2 {
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(20, 20px);
-    grid-template-rows: repeat(20, 20px);
+    grid-template-columns: repeat(20, 18px);
+    grid-template-rows: repeat(20, 18px);
     background-color: #f9f3cf;
     border-radius: 15px;
     border: 25px #ddbc89 solid;
@@ -67,6 +67,10 @@ h2 {
 
 .food {
     background-color: #A0522D;
+}
+
+.red-snake {
+    background-color: red;
 }
 
 @media screen and (max-width: 600px) {

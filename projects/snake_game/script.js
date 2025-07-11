@@ -15,6 +15,9 @@ let high_score = 0;
 let food = generateFood();
 let game_start = false;
 
+let touchstartX = 0;
+let touchstartY = 0;
+
 
 //main functions
 function drawGame() {
@@ -128,15 +131,16 @@ function checkCollision() {
     }
 }
 
-
 //listeners
 function keyEvent(event) {
-    if(!game_start && event.code === "Space") {
+    if(!game_start && event.key === ' ') {
         startGame();
     }
     else {
         switch (event.key) {
             case "ArrowUp":
+            case 'w':
+            case 'W':
                 if (snake.length === 1) {
                     direction = "up";
                 }
@@ -145,6 +149,8 @@ function keyEvent(event) {
                 }
                 break;
             case "ArrowDown":
+            case "s":
+            case "S":
                 if (snake.length === 1) {
                     direction = "down";
                 }
@@ -153,6 +159,8 @@ function keyEvent(event) {
                 }
                 break;   
             case "ArrowRight":
+            case "d":
+            case "D":
                 if (snake.length === 1) {
                     direction = "right";
                 }
@@ -161,6 +169,8 @@ function keyEvent(event) {
                 }
                 break; 
             case "ArrowLeft":
+            case "a":
+            case "A":
                 if (snake.length === 1) {
                     direction = "left";
                 }
@@ -174,10 +184,69 @@ function keyEvent(event) {
 
 
 //mobile touchable
+document.addEventListener("touchstart", touchStart, false);
+document.addEventListener("touchend", handleTouchEnd, false);
+
+function touchStart(event) {
+    touchstartX = event.touches[0].clientX;
+    touchstartY = event.touches[0].clientY;
+}
+
+function handleTouchEnd(event) {
+    const touch_x = event.changedTouches[0].clientX;
+    const touch_y = event.changedTouches[0].clientY;
+
+    const direction_x = touch_x - touchstartX;
+    const direction_y = touch_y - touchstartY;
+
+    if (!game_start) {
+            startGame();
+    }
+
+    if (game_start) {
+        const tap_long = 30;
+
+        //horizontal swipe
+        if (Math.abs(direction_x) > Math.abs(direction_y)) {
+            if (Math.abs(direction_x) > tap_long) {
+                //right
+                if (direction_x > 0) {
+                    if (snake.length === 1 || direction !== "left") {
+                        direction = "right";
+                    }
+                } 
+                //left
+                else {
+                    if (snake.length === 1 || direction !== "right") {
+                        direction = "left";
+                    }
+                }
+            }
+        //vertical swipe
+        } 
+        else {
+            if (Math.abs(direction_y) > tap_long) {
+                //down
+                if (direction_y > 0) {
+                    if (snake.length === 1 || direction !== "up") {
+                        direction = "down";
+                    }
+                //up
+                } 
+                else {
+                    if (snake.length === 1 || direction !== "down") {
+                        direction = "up";
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 //game setup
 function startGame() {
+    
     game_start = true;
     instructions.style.display = "none";
     score.textContent = "000";
@@ -193,7 +262,10 @@ function startGame() {
 }
 
 function endGame() {
-        updateHighScore();
+    const snake_head = document.querySelector(".snake"); 
+    snake_head.classList.add("red-snake");
+
+    updateHighScore();
     clearInterval(game_interval);
     snake = [{x:11, y:10}];
     direction = "up";
@@ -201,7 +273,6 @@ function endGame() {
     game_start = false;
 
     instructions.style.display = "block";
-
     drawGame();
 }
 
@@ -218,5 +289,5 @@ function updateHighScore() {
     }
 }
 
-
 document.addEventListener("keydown", keyEvent);
+setTouchControl(board, keyEvent);
