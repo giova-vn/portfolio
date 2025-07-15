@@ -186,6 +186,7 @@ function keyEvent(event) {
 //mobile touchable
 document.addEventListener("touchstart", touchStart, false);
 document.addEventListener("touchend", handleTouchEnd, false);
+document.addEventListener("touchmove", handleTouchMove, false); //stop default scrolling
 
 function touchStart(event) {
     touchstartX = event.touches[0].clientX;
@@ -243,6 +244,10 @@ function handleTouchEnd(event) {
     }
 }
 
+function handleTouchMove(event) {
+    event.preventDefault();
+}
+
 
 //game setup
 function startGame() {
@@ -290,4 +295,3 @@ function updateHighScore() {
 }
 
 document.addEventListener("keydown", keyEvent);
-setTouchControl(board, keyEvent);

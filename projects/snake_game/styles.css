@@ -59,6 +59,10 @@ h2 {
     
 }
 
+#main-picture {
+    width: 350px;
+}
+
 /* game elements  */
 .snake {
     background-color: #006400;
@@ -105,6 +109,10 @@ h2 {
     }
 
     #enter-text {
+        width: 300px;
+    }
+
+    #main-picture {
         width: 300px;
     }
 }
